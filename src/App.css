@@ -1,0 +1,85 @@
+/* ==========================================================================
+   1. GLOBAL RESETS & BODY LAYOUT
+   ========================================================================== */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg);
+  color: var(--text-main);
+  transition: background-color 0.2s ease, color 0.2s ease;
+  min-height: 100vh;
+}
+
+/* ==========================================================================
+   2. DASHBOARD TYPOGRAPHY
+   ========================================================================== */
+.dashboard-title {
+  color: var(--text-main);
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+}
+
+.ledger-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+/* ==========================================================================
+   3. FORM INPUTS & INTERACTIVE ELEMENTS
+   ========================================================================== */
+input, select {
+  background-color: var(--card-bg);
+  color: var(--text-main);
+  border: 1px solid var(--border);
+  font-family: inherit;
+  padding: 10px 12px;
+  border-radius: 6px;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+input:focus, select:focus {
+  border-color: var(--blue);
+}
+
+/* Primary Form Button Styling */
+.btn-primary {
+  background-color: var(--blue); /* FIXED: Swapped undefined var(--accent-color) */
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.15s, transform 0.1s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.btn-primary:hover {
+  background-color: var(--navy); /* FIXED: Uses standard brand hover color */
+}
+
+.btn-primary:active {
+  transform: scale(0.98);
+}
+
+/* Generic Utility Counter badge if needed */
+.counter {
+  font-size: 16px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: var(--text-main);
+  background: var(--card-bg);
+  border: 2px solid var(--border);
+}

@@ -1,0 +1,72 @@
+:root {
+  /* 🎨 Color palette */
+  --green: #2ecc71;
+  --amber: #e67e22;
+  --purple: #9b59b6;
+  --blue: #3498db;
+  --muted: #7f8c8d;
+  --border: #e0e0e0;
+  --card-bg: #ffffff;
+  --shadow: rgba(0, 0, 0, 0.08);
+
+  /* 🖋 Typography */
+  --font-main: 'Segoe UI', Roboto, sans-serif;
+  --heading-size: 1.25rem;
+  --body-size: 0.95rem;
+
+  /* 📐 Spacing */
+  --gap: 1rem;
+  --radius: 8px;
+}
+
+/* 🌟 Card styling */
+.card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: 0 2px 6px var(--shadow);
+  padding: var(--gap);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px var(--shadow);
+}
+
+/* 🔘 Buttons */
+.btn-primary {
+  background: var(--purple);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius);
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+.btn-primary:hover {
+  background: #7d3c98;
+}
+
+/* 📊 Table */
+table th, table td {
+  padding: 0.75rem;
+}
+table th {
+  background: var(--blue);
+  color: #fff;
+  font-weight: 600;
+}
+table tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+/* 🖼 Layout */
+.grid-layout {
+  display: grid;
+  gap: var(--gap);
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.progress-bar-fill {
+  transition: width 0.5s ease;
+}

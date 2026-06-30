@@ -1,0 +1,40 @@
+:root {
+
+  --primary: #2563eb;
+  --primary-dark: #1d4ed8;
+
+  --secondary: #7c3aed;
+
+  --success: #10b981;
+
+  --danger: #ef4444;
+
+  --warning: #f59e0b;
+
+  --background: #f5f7fb;
+
+  --surface: #ffffff;
+
+  --border: #e5e7eb;
+
+  --text: #1f2937;
+
+  --text-light: #6b7280;
+
+  --radius: 16px;
+
+  --shadow:
+      0 10px 30px rgba(0,0,0,.08);
+
+  --transition: .3s ease;
+
+}
+
+/* --- AUTOMATIC DARK MODE OVERRIDES --- */
+[data-theme="dark"] {
+  --bg: #0F172A;          /* Deep dark slate background */
+  --card-bg: #1E293B;     /* Dark blue-gray for containers */
+  --text-main: #F8FAFC;   /* Crisp off-white text for dark mode */
+  --text-muted: #94A3B8;  /* Soft gray secondary text */
+  --border: #334155;      /* Darker slate borders */
+}
